@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivational Mockery</title>
+    <title>LinkedIn Lunatic Meme Generator</title>
     <style>
+        /* All previous styles remain exactly the same */
         * {
             margin: 0;
             padding: 0;
@@ -205,6 +205,7 @@
             z-index: 1000;
             opacity: 0;
             transition: opacity 0.3s ease;
+            overflow-y: auto;
         }
 
         .modal.show {
@@ -218,7 +219,7 @@
             border-radius: 12px;
             max-width: 600px;
             width: 90%;
-            margin: auto;
+            margin: 2rem auto;
             position: relative;
             transform: translateY(-20px);
             transition: transform 0.3s ease;
@@ -256,6 +257,11 @@
             gap: 1rem;
             padding-top: 1rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            bottom: 0;
+            background: var(--card-dark);
+            padding: 1rem 0;
+            margin-top: 1rem;
         }
 
         .btn {
@@ -347,7 +353,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Motivational Mockery</h1>
+        <h1>LinkedIn Lunatic Meme Generator</h1>
         
         <div class="disclaimer-section">
             <div class="disclaimer-header" onclick="toggleDisclaimer()">
@@ -355,34 +361,34 @@
                 <span class="disclaimer-toggle">▼</span>
             </div>
             <div class="disclaimer-content" id="disclaimerContent">
-                <p>Welcome to Motivational Mockery, the app that gives professional life's quirkiest moments the playful roasting they deserve. Before you dive in, let's set the record straight—like that perfectly crafted LinkedIn post about 'transformational synergy.' Please read this entire disclaimer so we're all aligned and no one ends up crying over their humblebrag. (Spoiler: there's no free eBook at the end, but you'll leave with your ego slightly bruised and a smile on your face.)</p>
+                <p>Welcome to LinkedIn Lunatic Meme Generator, the app that gives professional life's quirkiest moments the playful roasting they deserve. Before you dive in, let's set the record straight—like that perfectly crafted LinkedIn post about 'transformational synergy.' Please read this entire disclaimer so we're all aligned and no one ends up crying over their humblebrag. (Spoiler: there's no free eBook at the end, but you'll leave with your ego slightly bruised and a smile on your face.)</p>
 
                 <h3>1. No Data, No Drama.</h3>
-                <p>At Motivational Mockery, we take your privacy as seriously as LinkedIn influencers take their daily dose of buzzwords. No data you upload is saved, stored, sold, or shared. Your photos and roasts are processed on the fly and vanish faster than an intern deleting a poorly worded email. What happens in Motivational Mockery stays in Motivational Mockery—kind of like those embarrassing "team-building activities" no one wants to remember.</p>
+                <p>At LinkedIn Lunatic Meme Generator, we take your privacy as seriously as LinkedIn influencers take their daily dose of buzzwords. No data you upload is saved, stored, sold, or shared. Your photos and roasts are processed on the fly and vanish faster than an intern deleting a poorly worded email. What happens in LinkedIn Lunatic Meme Generator stays in LinkedIn Lunatic Meme Generator—kind of like those embarrassing "team-building activities" no one wants to remember.</p>
 
                 <h3>2. Feelings Are Fragile—Handle With Care.</h3>
-                <p>Let's be clear: Motivational Mockery is all about lighthearted fun. The roasts are cheeky, playful, and designed to bring a little self-deprecating humor to your day. If your feelings are as delicate as your favorite inspirational mug, proceed with caution. We're not responsible for any emotional turbulence caused by our AI roast generator. But hey, if you've made it this far, you've probably got a sense of humor sharper than your business casual wardrobe. 💼😂</p>
+                <p>Let's be clear: LinkedIn Lunatic Meme Generator is all about lighthearted fun. The roasts are cheeky, playful, and designed to bring a little self-deprecating humor to your day. If your feelings are as delicate as your favorite inspirational mug, proceed with caution. We're not responsible for any emotional turbulence caused by our AI roast generator. But hey, if you've made it this far, you've probably got a sense of humor sharper than your business casual wardrobe. 💼😂</p>
 
                 <h3>3. Don't Be THAT Person.</h3>
-                <p>We need to say this (because there's always one): DO NOT use Motivational Mockery to roast anyone other than yourself—or someone who's fully on board with being roasted. This is a self-roasting app, not a tool for roasting your coworkers, your boss, or that one person who keeps posting about their 'hustle.' Seriously, let's keep it friendly—we don't want to hear about your workplace drama.</p>
+                <p>We need to say this (because there's always one): DO NOT use LinkedIn Lunatic Meme Generator to roast anyone other than yourself—or someone who's fully on board with being roasted. This is a self-roasting app, not a tool for roasting your coworkers, your boss, or that one person who keeps posting about their 'hustle.' Seriously, let's keep it friendly—we don't want to hear about your workplace drama.</p>
 
                 <h3>4. Don't Take Yourself Too Seriously.</h3>
-                <p>The world is already full of perfectly curated profiles and overly polished personas. Motivational Mockery is here to remind you that it's okay to laugh at yourself every once in a while. That's the spirit we want you to carry forward—because life's too short to get upset over a joke about your tie or your 15th post about 'grinding harder.' Embrace the humor, laugh it off, and remember: even the best of us fall into LinkedIn Lunatic territory now and then. #SelfAwareness</p>
+                <p>The world is already full of perfectly curated profiles and overly polished personas. LinkedIn Lunatic Meme Generator is here to remind you that it's okay to laugh at yourself every once in a while. That's the spirit we want you to carry forward—because life's too short to get upset over a joke about your tie or your 15th post about 'grinding harder.' Embrace the humor, laugh it off, and remember: even the best of us fall into LinkedIn Lunatic territory now and then. #SelfAwareness</p>
 
                 <h3>5. We're Not Legally Responsible for Roasts Gone Rogue.</h3>
-                <p>If you do ignore Rule #3 (please don't) and decide to use Motivational Mockery to roast someone without their consent, that's on you. We're just the roast machine—you're the one who hit the button. Whatever fallout happens—hurt feelings, awkward conversations, or surprise HR meetings—is entirely your responsibility. Our hands? Clean. Your conscience? TBD.</p>
+                <p>If you do ignore Rule #3 (please don't) and decide to use LinkedIn Lunatic Meme Generator to roast someone without their consent, that's on you. We're just the roast machine—you're the one who hit the button. Whatever fallout happens—hurt feelings, awkward conversations, or surprise HR meetings—is entirely your responsibility. Our hands? Clean. Your conscience? TBD.</p>
 
                 <h3>6. No Refunds for Hurt Egos.</h3>
-                <p>While Motivational Mockery is completely free, we'd like to emphasize that we're not paying your therapy bill if the roast stings a little more than expected. Think of it like constructive criticism—sometimes it stings, but it's all in good fun (and maybe a little growth, too).</p>
+                <p>While LinkedIn Lunatic Meme Generator is completely free, we'd like to emphasize that we're not paying your therapy bill if the roast stings a little more than expected. Think of it like constructive criticism—sometimes it stings, but it's all in good fun (and maybe a little growth, too).</p>
 
                 <h3>7. Laugh. Share (Responsibly). Repeat.</h3>
-                <p>The goal of Motivational Mockery is simple: to bring some humor and levity to the overly serious world of professional personas. Feel free to share your roast on social media (responsibly!), but don't forget to tag us—because we live for the irony of a roast making it to LinkedIn.</p>
+                <p>The goal of LinkedIn Lunatic Meme Generator is simple: to bring some humor and levity to the overly serious world of professional personas. Feel free to share your roast on social media (responsibly!), but don't forget to tag us—because we live for the irony of a roast making it to LinkedIn.</p>
 
                 <h3>8. Buzzwords Don't Save Lives.</h3>
-                <p>Let's be clear—Motivational Mockery isn't here to optimize your career trajectory or fix your personal brand. It's here to poke fun at the absurdity of it all. If you're hoping to 'leverage AI synergies to disrupt roasting paradigms,' congratulations—you're already the ideal candidate for a roast.</p>
+                <p>Let's be clear—LinkedIn Lunatic Meme Generator isn't here to optimize your career trajectory or fix your personal brand. It's here to poke fun at the absurdity of it all. If you're hoping to 'leverage AI synergies to disrupt roasting paradigms,' congratulations—you're already the ideal candidate for a roast.</p>
 
                 <h3>Final Words:</h3>
-                <p>If you've read this far, congratulations! You've officially unlocked Disclaimer Guru status. Now go ahead—upload your photo and let Motivational Mockery roast you into professional oblivion. With style, humor, and a little corporate ridiculousness, we promise to keep the laughs coming. 💼🔥</p>
+                <p>If you've read this far, congratulations! You've officially unlocked Disclaimer Guru status. Now go ahead—upload your photo and let LinkedIn Lunatic Meme Generator roast you into professional oblivion. With style, humor, and a little corporate ridiculousness, we promise to keep the laughs coming. 💼🔥</p>
 
                 <p><strong>P.S.</strong> If you share your roast on LinkedIn, please tag us. The irony fuels our creativity.</p>
             </div>
@@ -481,7 +487,7 @@
         function downloadImage() {
             const link = document.createElement('a');
             link.href = captionedImage.src;
-            link.download = 'motivational_mockery.jpg';
+            link.download = 'linkedin_lunatic_meme.jpg';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -521,7 +527,8 @@
                     
                     const captionData = await captionResponse.json();
                     if (captionData.success) {
-                        captionedImage.src = captionData.captioned_image;
+                        // Force browser to reload the image by adding a timestamp
+                        captionedImage.src = captionData.captioned_image + '?t=' + new Date().getTime();
                         captionedImageContainer.style.display = 'block';
                     }
                 } else {
